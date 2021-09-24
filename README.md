@@ -5,7 +5,7 @@
 Alex Le, Ian Acosta, Sophia Tu, Kelly Wang 
 Brown University 
 
-### NOTE: For detailed description, please refer to Maestro![image](https://user-images.githubusercontent.com/29731342/134710822-523980f6-6449-4b47-a247-ebfa819f29bb.png)
+### NOTE: For detailed description, please refer to [Maestro.pdf](https://github.com/AlexKaiLe/maestro/blob/master/Maestro.pdf)
 
 
 ### Abstract:
