@@ -17,18 +17,17 @@ Rather than using a predefined classification algorithm (such as SIFT), we decid
 ### Documentation of program commands:
 To start the program, set up the cs1430\_env and navigate to the television directory. You also want to make sure you have all the correct libraries installed before running the program. Run the command <python main.py --weights your.weights.e007-acc0.9958.h5>. You can also train your own data using GCP and use the --weights flag to change the weights being used. (ie. <python main.py --weights [your weight file name]>. Once the program loads, you can input what song you would like to play from the prompted list. Once a song is chosen, the camera will load and will wait 30 seconds to calibrate. [NOTE*** for best performance, be in a room with a blank background with a light source point towards you]. There are 4 hands you can use to manipulate the songs by placing your hand in the blue box. The program will read in three frames and choose the mood predicted finger count to execute a command. If the hand is left in the box past the 3rd frame, it will be read in the next cycle. Thus, to prevent the program form continuing to read in your hand gesture, put your hand down once the desire command is read in. The threshold popup demonstrates what image of you hand is being put into the program.
 
-begin{itemize}
-    \item 0 fingers: Pauses current song
-    \item 1 finger: Shuffles the music to a random song
-    \item 3 fingers: Restarts the current 
-    \item 5 fingers: Resumes/plays current song
-\end{itemize}
+
+* 0 fingers: Pauses current song
+* 1 finger: Shuffles the music to a random song
+* 3 fingers: Restarts the current 
+* 5 fingers: Resumes/plays current song
+
 There are also two key commands. Because we are using a CNN, clicking on one of these commands may take up to a couple seconds before executing. Once on the the python video feed, you can click:
-\begin{itemize}
-    \item c: Changes the song of your desire (input your song choice into the terminal)
-    \\ \textit{terminal command:} Would you like to change songs? (y/n) 
-    \item q: Quits the program
-\end{itemize}
+* c: Changes the song of your desire (input your song choice into the terminal)
+     Would you like to change songs? (y/n) 
+* q: Quits the program
+
 
  
  
