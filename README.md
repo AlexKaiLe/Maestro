@@ -2,8 +2,11 @@
 
 ## CSCI 1430 Final Project Report: Remote Control
 
-Alex Le, Ian Acosta, Sophia Tu, Kelly Wang
+Alex Le, Ian Acosta, Sophia Tu, Kelly Wang 
 Brown University 
+
+### NOTE: For detailed description, please refer to Maestro![image](https://user-images.githubusercontent.com/29731342/134710822-523980f6-6449-4b47-a247-ebfa819f29bb.png)
+
 
 ### Abstract:
 We are team TeleVision and we wanted to create a gesture control system where different hand positions can activate different commands on a computer. We created a Convolutional Neural Network to recognize how many fingers—from 0 to 5—a right hand holds up and maps the gestures to commands on a music playlist. This gesture recognition system allows for a different approach to controlling interfaces, increasing accessibility.
