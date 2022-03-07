@@ -6,10 +6,6 @@ We are team TeleVision and we wanted to create a gesture control system where di
 ### Introduction:
 We wanted to create a gesture control system where different hand positions can activate different commands on a computer. We wanted accurate recognition of input images so we tried to create a convolutional neural network for the task. We believe that introducing machine learning into the task would greatly benefit accuracy. Human hands are very complex because they can bend into various shapes and look different from different angles. This makes recognition difficult as different gestures may have similar contours. Nonetheless, we believe that remote control through hand gestures would offer offer an alternate approach to controlling interfaces, increasing accessibility for different groups of people. For those who may have disabilities or difficulties understanding or accessing traditional buttons, having an accurate, and easily learned hand-gesture control would improve accessibility.
 
-### Related Work: 
-For this project, we mainly referenced \href{https://browncsci1430.github.io/webpage/proj4_cnns/}{Project 4}~\cite{project4} from Brown University's CSCI 1430 Computer Vision and Gogul09's \href{https://browncsci1430.github.io/webpage/proj4_cnns/}{Hand Gesture Recognition}~\cite{gesture}. Furthermore, we used data from \href{https://www.kaggle.com/koryakinp/fingers}{this fingers database}.
-
-
 ### Method:
 Rather than using a predefined classification algorithm (such as SIFT), we decided that using a CNN would help us create a more extensible program since we would be able to add more pictures to make the training data more robust. Although this process would take longer because of the extra training step, we figured that this would provide more accurate and consistent results in any type of environment. Our approach was to utilize a CNN to train on a black and white data set of hands to help us classify the amount of fingers a person holds up. As for our CNN, we used a simple three-block architecture that ultimately outputs one of the six hand classifications, which represents each finger count from zero fingers to five fingers.
 
