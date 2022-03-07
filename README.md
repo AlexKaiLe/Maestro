@@ -80,7 +80,7 @@ Figure 5 shows the predictions for one of our trained models.
 ![](imagelabelpredictions.png)
 
 Our best set of weights is the file "your.weights.e007-acc0.9958.h5" and we achieved 99.58% accuracy and 1.647% loss in epoch 7. Figure 6 shows how accuracy and loss changes through each epoch.
-![](graphs epoch.png)
+![](graphs_epoch.png)
 
 In testing mode, we were able to create an interface with functioning gesture contols. Figure 8 shows the terminal output when the program is run, offering the user to select a song and performing background calibration.
 ![](terminal.png)
