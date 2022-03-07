@@ -54,6 +54,7 @@ Filtering process of each frame after the background or environment has been cal
 
 Figure 2 shows the step-by-step process in which the rawfeed is manipulated to look like the training data images.
 ![](filter_steps.png)
+
 Figure 3 shows how we filter and adjust camera inputimages to match data
 ![](input_match_data.png)
 
@@ -74,10 +75,14 @@ if ARGS.weights is None:
         model.load_weights(ARGS.weights, by_name = False)
         test(model, music)
         
-In training mode, we adjusted hyperparameters and batch sizes to get the model to lean how to classify images. We have 6 class labels (gestures of right hands holding up 0, 1, 2, 3, 4, or 5 fingers) the image could be classified to. After many rounds of training, we were able to achieve high accuracy and low loss. Figure 4 shows the accuracy and loss graphs as we trained our model.
+In training mode, we adjusted hyperparameters and batch sizes to get the model to lean how to classify images. We have 6 class labels (gestures of right hands holding up 0, 1, 2, 3, 4, or 5 fingers) the image could be classified to. After many rounds of training, we were able to achieve high accuracy and low loss. 
+
+Figure 4 shows the accuracy and loss graphs as we trained our model.
 ![](graphs.png)
+
 Figure 5 shows the predictions for one of our trained models.
 ![](imagelabelpredictions.png)
+
 Our best set of weights is the file "your.weights.e007-acc0.9958.h5" and we achieved 99.58% accuracy and 1.647% loss in epoch 7. Figure 6 shows how accuracy and loss changes through each epoch.
 ![](graphs epoch.png)
 
@@ -85,8 +90,10 @@ In testing mode, we were able to create an interface with functioning gesture co
 ![](terminal.png)
 
 Figure 9, 10, and 11 shows the program in action, with the different hand gestures successfully activating different controls for the music player. 
-![](pauses.png)
+![](pause.png)
+
 ![](restart.png)
+
 ![](unpause.png)
 
 ### Technical Discussion
