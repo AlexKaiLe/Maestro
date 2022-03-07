@@ -60,7 +60,7 @@ Figure 3 shows how we filter and adjust camera inputimages to match data
 ### Results:
 We were able to create a decently functional music player with hand gesture controls. There are two modes to our program: training mode and testing mode. Within our main function, we have an if statement to separate the two modes our program can run in. If we do not pass in a .h5 file to the --weights args, the program will go into training mode to train a set of weights using our model. This mode should be run in GCP and could be linked to tensorboard to produce loss/accuracy graphs as well as image label predictions. If we do pass in weights as args, the program will go directly into testing mode and start up our musical playlist and camera system. The weights are loaded into our model and the camera input images will be adjusted and passed into the model for classification.
 
-`if ARGS.weights is None:
+if ARGS.weights is None:
         model.summary()
         if not os.path.exists(checkpoint_path):
             os.makedirs(checkpoint_path)
@@ -72,7 +72,7 @@ We were able to create a decently functional music player with hand gesture cont
         music = input("Please input an audio file from the list below: \n- friends\n- hallelujah\n- flamingo\n- twistAndShout\n- world\n- dance\n")
         music += ".mp3"
         model.load_weights(ARGS.weights, by_name = False)
-        test(model, music)`
+        test(model, music)
         
 In training mode, we adjusted hyperparameters and batch sizes to get the model to lean how to classify images. We have 6 class labels (gestures of right hands holding up 0, 1, 2, 3, 4, or 5 fingers) the image could be classified to. After many rounds of training, we were able to achieve high accuracy and low loss. Figure 4 shows the accuracy and loss graphs as we trained our model.
 ![](graphs.png)
